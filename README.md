@@ -1,6 +1,6 @@
 # vue-canvas
 
-An experiment of using Vue to trigger Canvas drawing.
+An experiment using Vue to trigger Canvas drawing.
 
 Demo: [https://charlesdaniel.github.io/vue-canvas-demo/](https://charlesdaniel.github.io/vue-canvas-demo/)
 
