@@ -34,20 +34,20 @@ export default {
     drawCanvas() {
       if(this.ctx && this.penDown){ 
         this.ctx.beginPath()
-        this.ctx.fillStyle = this.selectedColor
-        this.ctx.strokeStyle = this.selectedColor
+        this.ctx.fillStyle = this.selectedColor // eslint-disable-line vue/no-side-effects-in-computed-properties
+        this.ctx.strokeStyle = this.selectedColor // eslint-disable-line vue/no-side-effects-in-computed-properties
         //this.ctx.fillRect(this.x, this.y, 10, 10)
         this.ctx.arc(this.x, this.y, 10, 0, Math.PI * 2, true)
         this.ctx.stroke()
       }
-      return this.updateCount++
+      return this.updateCount++  // eslint-disable-line vue/no-side-effects-in-computed-properties
     }
   },
   methods: {
-    mousedown(ev) {
+    mousedown() {
       this.penDown = true
     },
-    mouseup(ev) {
+    mouseup() {
       this.penDown = false
     },
     mousemove(ev) {
